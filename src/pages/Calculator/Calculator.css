@@ -1,0 +1,62 @@
+/* content from index.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.calculator {
+    width: 500px;
+    height: 450px;
+    margin: auto;
+    background-color: #d3d3d3;
+    border-radius: 20px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.show_result {
+    background-color: #222;
+    color: white;
+    font-size: 5rem;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 20px;
+    border-radius: 20px 20px 0 0;
+}
+
+.key_area {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    padding: 20px;
+}
+
+button .key_area  {
+    width: 100%;
+    height: 100px;
+    font-size: 2.5rem;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:active {
+    background-color: #d3d3d3;
+}
+
+#equal_btn {
+    background-color: #ff7854;
+    color: white;
+    grid-column: 4;
+    grid-row: 2 / span 4;
+    height: auto;
+}
+
+#equal_btn:active {
+    background-color: #bb4b2d;
+}
+
+.operator {
+    background-color: #eeeeee;
+}
